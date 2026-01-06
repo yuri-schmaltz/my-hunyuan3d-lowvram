@@ -11,9 +11,11 @@ module.exports = {
       message: "git pull"
     }
   }, {
-    method: "fs.rm",
+    method: "shell.run",
     params: {
-      path: "app/env"    
+      path: "app",
+      venv: "env",
+      message: "uv pip install -r requirements.txt"
     }
   }]
 }
