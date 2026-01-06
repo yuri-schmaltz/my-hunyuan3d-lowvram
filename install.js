@@ -111,15 +111,14 @@ module.exports = {
           "python setup.py install"
         ]
       }
-    }
     },
-{
-  method: "shell.run",
-  params: {
-    venv: "env",
-    path: "app",
-    message: "python ../check_gpu.py"
-  }
-}
+    {
+      method: "shell.run",
+      params: {
+        venv: "env",
+        path: "app",
+        message: "python ../check_gpu.py"
+      }
+    }
   ]
 }
